@@ -1,0 +1,46 @@
+#include <iostream>
+using namespace std;
+
+struct Student{
+    
+    string name;
+    int roll_no;
+    // string scholarship;
+    bool scholarship;
+    
+    Student(){
+        // name = "default";
+        // age = 100;
+        cout<<"Constructor ran";
+        cout<<endl;
+    }
+    
+    void getname(){
+        cout<<"my name is: "<<name;
+    }
+};
+int main() {
+    Student s2;
+    s2.roll_no = 43;
+    s2.name = "krishna";
+    s2.scholarship = "present";
+    
+    s2.getname();
+    
+    Student s1;
+    s1.roll_no = 17;
+    s1.name = "nitesh";
+    s1.scholarship = " Not present";
+    
+    s1.getname();
+    
+    
+    Student s3;
+    
+
+    // cout<<" "<<details.roll_no<<endl;
+    // cout<<" "<<details.name<<endl;
+    // cout<<" "<<details.scholarship<<endl;
+
+    return 0;
+}
